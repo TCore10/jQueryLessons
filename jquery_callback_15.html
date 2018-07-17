@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Callback</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$("#panel").hide("slow",function(){
+					alert("This just an alert");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="button">Hide</button>
+	<p id="panel">Click me and I will run away and hide</p>
+</body>
+</html>

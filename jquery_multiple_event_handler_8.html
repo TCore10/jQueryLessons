@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Event Handler</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").on({
+				mouseenter : function(){
+					$(this).css("background-color","lightblue");
+				},
+				mouseleave : function(){
+					$(this).css("background-color","yellow");
+				},
+				click : function(){
+					$(this).css("background-color","red");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="button">Click Me</button>
+</body>
+</html>

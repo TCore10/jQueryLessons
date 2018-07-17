@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animate</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#button").click(function(){
+				$("div").animate({
+					left : '250px',
+					opacity : '0.5',
+					height : '150px',
+					width : '150px'
+				});
+				//$("p").hide(1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="button">Start Animation</button>
+	<p>This is to be shown at the begining of animation</p>
+	<div style="background-color: #006080;width: 80px;height: 80px;position:absolute;"></div>
+</body>
+</html>

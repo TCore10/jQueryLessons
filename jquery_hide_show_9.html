@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Hide</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("#test").hide();
+			});
+			$("#show").click(function(){
+				$(".class").show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="test" class="class">This is just a Test</p>
+	<p class="class">How are u?</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+</body>
+</html>

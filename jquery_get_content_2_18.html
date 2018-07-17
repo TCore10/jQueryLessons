@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Value</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#click").click(function(){
+				alert("Value:" + $("#p").val());
+			});
+		});
+	</script>
+</head>
+<body>
+	<p>Name: <input id="p" type="text"></p>
+	<button id="click">Get Value</button>
+</body>
+</html>

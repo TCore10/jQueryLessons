@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attribute</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".click").click(function(){
+				alert($("#hitman").attr("href"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<p><a id="hitman" href="http://www.xclusiveblogs.com/">www.xclusiveblogs.com</a></p>
+	<button class="click">Get Attribute</button>
+</body>
+</html>

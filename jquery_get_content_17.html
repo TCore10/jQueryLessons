@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Content</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#html").click(function(){
+				alert("HTML:" + $("#p").html());
+			});
+			$("#text").click(function(){
+				alert("TEXT:" + $("#p").text());
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="p">This is just a <b>temporary</b> paragraph</p>
+	<button id="html">Show html</button>
+	<button id="text">Show text</button>
+</body>
+</html>
